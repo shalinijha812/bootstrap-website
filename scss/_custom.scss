@@ -1,1 +1,108 @@
-$blue: red;
+
+$hover:white;
+$primary:grey;
+$secondary:lightgrey;
+@mixin fonts(){
+   font-family: 'Lobster', cursive;
+
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color:$secondary !important;
+    text-align:center !important;
+}
+.jumbotron{
+    @include fonts();
+    
+}
+.list-group-item{
+    background-color:$secondary!important;
+}
+.active{
+    background-color: black !important;
+}
+
+
+.logo{
+    width:30px;
+    height:30px;
+}
+.carousel{
+        img{
+            height: auto;
+    }
+}
+.img-container{
+    width:100%;
+    height:auto;
+    
+    
+}
+
+.links{
+
+    background-color:black;
+        li{
+            list-style-type:none;
+            color:grey;
+            a{
+                text-decoration:none;
+                color:grey;
+            }
+
+            a:hover{
+                        color:$hover;
+                    }
+            
+        }
+}
+.icons{
+        .fab{
+            padding:1.5rem;
+            font-size:1.5rem;
+            text-align: center;
+        }
+        justify-content: center;
+
+    
+}
+.card-deck{
+    padding-top:2rem;
+    
+}
+.button-card{
+    margin-bottom: 0rem !important;
+}
+.card img{
+    height:30vh;
+}
+
+ul{
+    margin-top: 1 rem !important;
+}
+.copy-text{
+    color:$secondary;
+}
+
+.carousel-item{
+    img{
+        height:70vh;
+    }
+}
+
+@media(min-width:700px)
+    {
+        .carousel-item{
+            img{
+                height:100vh;
+            }
+        
+    }
+    }
+
+
+
+
+
